@@ -32,13 +32,14 @@ def scrape_items(url):
     item_count = 0
     shoes_data = []
     for item in items:
-        if (item_count > 9):
+        if (item_count > 26):
             break
 
         try:
             shoe = {}
             print("---------")
             print("item url -> "+item)
+            shoe["url"] = item
             response = requests.get(item)
             soup = BeautifulSoup(response.text, 'html.parser')
             name = soup.find("h1", {"id": "itemTitle"}).text.replace('Details about', '').strip()

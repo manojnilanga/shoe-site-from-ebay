@@ -53,7 +53,7 @@ address {
 .search-button {
     border:rgb(0, 9, 32) solid;
     background:rgb(0, 9, 32);
-    border-width: 40px;
+    border-width: 6px;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;

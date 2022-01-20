@@ -36,18 +36,24 @@
     <!--    <address>Trending Searches</address>-->
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
     {% if shoe_data %}
         <div class="container">
             <div class="row">
                 {% for item in shoe_data %}
                     <div class="col">
-                        <div class="card" style="width: 20rem;">
-                            <img src={{item.img}} class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">{{item.name}}</h5>
-                                <p class="card-text">{{item.price}}</p>
+                        <a href={{item.url}} style="text-decoration: none">
+                            <div class="card" style="width: 20rem;">
+                                <img src={{item.img}} class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{item.name}}</h5>
+                                    <p class="card-text">{{item.price}}</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 {% endfor %}
             </div>

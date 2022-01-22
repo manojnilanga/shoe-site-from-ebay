@@ -32,7 +32,7 @@ def scrape_items(url):
     item_count = 0
     shoes_data = []
     for item in items:
-        if (item_count > 26):
+        if (item_count > 25):
             break
 
         try:
